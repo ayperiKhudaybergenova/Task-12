@@ -12,6 +12,7 @@ for https://sites.google.com/view/semeval2026-task12/
 ## Current Status (Overview)
 -reading releated papers.
 https://arxiv.org/pdf/2305.16646
+
 https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
 
 ## Known Issues
