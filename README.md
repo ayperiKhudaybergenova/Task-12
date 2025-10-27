@@ -24,13 +24,9 @@ for https://sites.google.com/view/semeval2026-task12/
 
 ## Prioritized TODO List
 
-1. Reduce duplicate/near-duplicate topics (high)
+1. Literature review
    
-   - Post-processing: merge semantically similar topics.
-     - Option A: Use BERTopic `reduce_topics(docs, topics, probabilities, nr_topics=...)` in a targeted way (already wired via `TARGET_N_TOPICS`).
-     - Option B: Custom merge based on label/keyword or topic-representation embeddings; merge when cosine similarity ≥ threshold, e.g., 0.85.
-     - Option C: Use hierarchical topic modeling in BERTopic and merge close nodes.
-   - Maintain domain-specific stopwords and phrase lists to avoid trivial variants.
+ 
 
 1. Control the number of topics per product (high)
    
