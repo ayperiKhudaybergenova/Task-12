@@ -3,30 +3,19 @@
 for https://sites.google.com/view/semeval2026-task12/
 
 
-# Handover TODO – Fine-Tuning Topic Modeling
+# Handover TODO 
 
 ## Goal
 
-Improve topic quality per product, reduce duplicated/near-duplicate topics, achieve a sensible number of topics, and identify sub-topics (intra-topics) when clusters are very dense.
+
 
 ## Current Status (Overview)
-
-- Pipeline: SQL → Translation (Azure Translator) → LLM Cleaning → BERTopic → Labeling (Azure OpenAI) → Visuals/CSV/SQLite.
-- Key files
-  - `Getting_Started/main.py`: Orchestration, global vs. per-product (`--per-product`, `ENABLE_PER_PRODUCT_TOPICS`).
-  - `Getting_Started/app/processing.py`: Translation, cleaning, product grouping.
-  - `Getting_Started/app/modeling.py`: BERTopic build, label generation, visualization export.
-  - `Getting_Started/app/config.py`: `.env`/defaults (e.g., `REPRESENTATIVE_DOCS`, paths).
-- Important .env parameters (already used)
-  - `MODEL_MAX_TICKETS`, `MODEL_CREATED_AFTER`, `ENABLE_PER_PRODUCT_TOPICS`, `MIN_PRODUCT_GROUP_SIZE`
-  - `TARGET_N_TOPICS` (optional reduction), `REPRESENTATIVE_DOCS`
+-reading releated papers.
+https://arxiv.org/pdf/2305.16646
+https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
 
 ## Known Issues
 
-- Similar topics appear multiple times (duplicates/semantically close topics).
-- Too many topics per product.
-- Current model is fast but topic quality is limited.
-- For products where a single topic contains a large number of tickets, sub-topics (intra-topics) should be investigated.
 
 ## Prioritized TODO List
 
