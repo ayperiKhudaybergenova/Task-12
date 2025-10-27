@@ -1,4 +1,3 @@
 # Task-12
 
-This is the task 12
-test
+for https://sites.google.com/view/semeval2026-task12/
