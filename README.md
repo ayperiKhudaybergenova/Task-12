@@ -30,3 +30,5 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
    
  
 ## Main Schdeule from Class :
+![schedule]( https://github.com/ayperiKhudaybergenova/Task-12/blob/main/Main%20Schedule.png)
+        
