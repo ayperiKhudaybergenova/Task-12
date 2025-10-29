@@ -28,4 +28,4 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
    
    
  
-## Main Schdeule from Class :#
+## Main Schdeule from Class : https://github.com/ayperiKhudaybergenova/Task-12/blob/main/Screenshot%202025-10-29%20at%2009.50.56.png
