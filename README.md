@@ -12,7 +12,7 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
 
 ## Current Status (Overview)
 
-- by 31.10.25 : reading releated papers 
+-by 31.10.25 : reading releated papers 
 
 https://arxiv.org/pdf/2305.16646
 
