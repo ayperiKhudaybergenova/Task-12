@@ -5,7 +5,7 @@ for https://sites.google.com/view/semeval2026-task12/
 
 datset https://github.com/sooo66/semeval2026-task12-dataset
 
-# Handover TODO 
+#  TODO 
 
 ## Goal
 
