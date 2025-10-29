@@ -12,15 +12,15 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
 
 ## Current Status (Overview)
 
--by 31.10.25 : reading releated papers 
+-by 31.10.25    reading releated papers 
 
 https://arxiv.org/pdf/2305.16646
 
 https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
 
--by 07.11.25:Running the first code with what provided.
+-by 07.11.25   Running the first code with what provided.
 
--by 14.11.25: First presentation.
+-by 14.11.25   First presentation.
 
 
 ## Prioritized TODO List with Known Issues and details.
