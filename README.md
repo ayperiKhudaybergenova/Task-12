@@ -7,24 +7,26 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
 
 #  TODO 
 
-## Goal
+## Main Schdeule from Class 
 
 
 
 ## Current Status (Overview)
--reading releated papers.
+- by 31.10.25 : reading releated papers 
 
 - https://arxiv.org/pdf/2305.16646
 
 - https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
 
-## Known Issues
+-by 07.11.25:Running the first code with what provided.
 
-- 
+-by 14.11.25: First presentation.
 
-## Prioritized TODO List
+
+## Prioritized TODO List with Known Issues and details.
 
 1. Literature review
+   
    
  
 
