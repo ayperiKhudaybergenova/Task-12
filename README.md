@@ -7,7 +7,6 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
 
 #  TODO 
 
-## Main Schdeule from Class 
 
 
 
@@ -29,4 +28,4 @@ datset https://github.com/sooo66/semeval2026-task12-dataset
    
    
  
-
+## Main Schdeule from Class :#
