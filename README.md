@@ -43,8 +43,8 @@ https://aclanthology.org/2025.acl-long.1269.pdf?utm_source=chatgpt.com
    - preporocess data | if need format the data .
    
 ## Step 3: Choose a Baseline Model
-   -   Llama | Qwen(free model)
-   -   GPU ?
+   -   Llama | Qwen(free model) | DeBERTa
+   -   GPU ? try bwHPC?
      
 ## Step 4: Prepare Model Input
    - Create prompt
