@@ -2,7 +2,13 @@ import json
 import jsonlines
 import torch
 from torch.utils.data import Dataset, DataLoader
-from transformers import DebertaV3Tokenizer, DebertaV3ForSequenceClassification, Trainer, TrainingArguments
+from transformers import (
+    DebertaV3Tokenizer,
+    DebertaV3ForSequenceClassification,
+    Trainer,
+    TrainingArguments,
+    EarlyStoppingCallback
+)
 
 # -------------------------
 # Config
@@ -51,7 +57,6 @@ def load_questions(path):
                 "D": q["option_D"],
             }
 
-            # combine text input
             input_text = (
                 f"Question: {question}\n"
                 f"Context: {context}\n"
@@ -62,7 +67,6 @@ def load_questions(path):
                 f"D: {options['D']}"
             )
 
-            # Convert golden label (multi-label possible)
             golden = q["golden_answer"].replace(" ", "").split(",")
             label = [
                 1 if letter in golden else 0
@@ -107,14 +111,14 @@ model = DebertaV3ForSequenceClassification.from_pretrained(
 )
 
 # -------------------------
-# Training
+# Training Arguments
 # -------------------------
 args = TrainingArguments(
     output_dir="./deberta_out",
     per_device_train_batch_size=4,
     per_device_eval_batch_size=4,
     learning_rate=2e-5,
-    num_train_epochs=4,
+    num_train_epochs=8,
     evaluation_strategy="epoch",
     save_strategy="epoch",
     weight_decay=0.01,
@@ -122,12 +126,19 @@ args = TrainingArguments(
     fp16=True,
 )
 
+# -------------------------
+# Trainer (with Early Stopping)
+# -------------------------
 trainer = Trainer(
     model=model,
     args=args,
     train_dataset=train_ds,
     eval_dataset=dev_ds,
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=2)]
 )
 
+# -------------------------
+# Run Training
+# -------------------------
 trainer.train()
 trainer.save_model("./deberta_finetuned")
